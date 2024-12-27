@@ -63,7 +63,7 @@
 
                 async fetchEvents() {
                     try {
-                        const response = await fetch('http://localhost:3000/events');
+                        const response = await fetch('https://events-alpine-express.onrender.com/events');
                         this.events = await response.json();
                     } catch (error) {
                         console.error('Error fetching events:', error);
